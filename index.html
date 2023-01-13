@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Handson3</title>
+</head>
+<body>
+    <h1>Q.1 Find the number of digits</h1>
+    <pre>const Find_Digits = (N) => 
+{
+var noOfDigits = 0;
+// Every time the loop runs it removes the last digit 
+while(N>0) // until the condition is false , repeat 
+{
+    noOfDigits++;
+    N = Math.trunc(N/10);
+    //console.log(N);
+}
+return (noOfDigits);
+};</pre>
+<br>
+<h1>Q.2 Find the Fives.</h2>
+<pre>const Find_Five = (N,arr) => 
+{
+	 var count =0;
+	 var a=5;
+	 while(N>0)
+	 {
+	   if (N%10 == a)
+	     count++;
+	     N=Math.trunc(N/10);
+	 }
+	 return(count);
+};</pre>
+<br>
+<h1>Q.3 Find Sum</h1>
+<pre>const findSum = (n) => {
+    let sum=0;
+    for(let i=2; i>=2; i++)
+    {
+      if(n%i==0)
+      {
+        sum= n + i;
+      }
+    }
+};</pre>
+<br>
+<h1>Q.4 Find the sum of the digits of a given number.</h1>
+<pre>const Number_Sum = (N) => 
+{
+	let sum = 0;
+  while(N)
+ {
+  sum += N%10;
+   N = Math.floor(N/10);
+  }
+  return(sum);
+};</pre>
+<br>
+<h1>Q.5 Print the Odds.</h1>
+<pre>const Print_Odd = (N) => 
+            {
+              let i;
+              if(i = 2){
+                console.log(i);
+              }
+                 for(i=2; i<=N; i++)
+                 {
+                   if(i%2 !==0)
+                   console.log(i);
+                 }
+            };</pre>
+            <br>
+<h1>Q.6 Print the Pattern. </h1>
+<pre>const Print_pattern = (N) => 
+            {
+            var pattern = "";
+            for(let j = 1; j<=N; j++)
+            {
+               for(i=1; i<=j; i++)
+               {
+                 pattern = pattern + "*"
+              }
+              
+            pattern = pattern + "\n"
+            
+            }
+            console.log(pattern);
+            };</pre>
+<br>
+<h1>Q.7 Check whether a Number is a prime or not.</h1>
+<pre>const Prime_Check = (N) => 
+{
+  if(N==1)
+  {
+    return 'NO';
+  }
+	 for(let i=2; i<=(N-1); i++)
+	 {
+	   if(N%i===0){
+	     return 'NO';
+	   }
+	 }
+	  return 'YES';
+	
+};</pre>
+<br>
+<h1>Q.8 Print Numbers</h1>
+<pre>const printNumbers = (n) => {
+    for(i=1; i<=n; i++)
+    {
+      console.log(i);
+    }
+};</pre>
+<br>
+<h1>Q.9 Print the Table</h1>
+<pre>const Print_Table = (N) => 
+{
+	var i;
+	
+	for(i=1; i<=10; i++)
+	{
+	   N*i;
+	   console.log(N + ' * ' + i + ' = '+ (N * i));
+	}
+};</pre>
+</html>
